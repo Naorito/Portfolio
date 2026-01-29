@@ -147,6 +147,124 @@ a {
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
+    max-width: 1200px;       /* limite la largeur du contenu */
+    margin: 0 auto;          /* centre le contenu */
+    padding: 0 2rem;         /* ajoute une marge interne sur les côtés */
+}
+
+/* ============================================
+   Pages Détail de Projet (uniformisées)
+   ============================================ */
+.project-detail {
+    max-width: 900px;
+    margin: 120px auto 40px; /* espace en haut pour éviter le recouvrement par le header */
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.project-detail h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.project-detail .meta {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+.project-detail section {
+    margin-bottom: 30px;
+}
+.project-detail h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.project-detail h3 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.project-detail ul,
+.project-detail ol {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+.project-detail li {
+    margin-bottom: 10px;
+}
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.tech-list span {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Spécifiques à certaines pages (API & visuels) */
+.endpoint {
+    background: #ecf0f1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 4px 4px;
+    font-family: monospace;
+}
+.kbd {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-bottom-width: 2px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+.code-block {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-family: monospace;
+    overflow: auto;
+}
+.note {
+    background: #fff3cd;
+    border: 1px solid #ffecb5;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+.kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.img {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    padding: 8px;
+}
+.img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centre horizontalement l'image */
 }
 
 .profile-image {
@@ -331,6 +449,11 @@ a {
     background-color: var(--light-color);
 }
 
+.formations-section {
+    padding: 5rem 0;
+    background-color: var(--light-color);
+}
+
 .section-header {
     padding: 3rem 0 1rem;
 }
@@ -483,7 +606,7 @@ a {
 }
 
 .year-section {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 .year-title {
@@ -496,7 +619,7 @@ a {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 

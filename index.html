@@ -10,9 +10,11 @@
     <!-- Navigation fixe -->
     <nav class="navbar">
         <div class="nav-container">
-            <h2 class="logo">YD</h2>
+            <a class="logo" href="#accueil">Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#formations" class="nav-link">Formations</a></li>
                 <li><a href="#competences" class="nav-link">Compétences</a></li>
                 <li><a href="#projets" class="nav-link">Projets</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -32,8 +34,8 @@
                 <h1>Yacine DOUKANI</h1>
                 <p class="subtitle">Étudiant en 3ème année BUT Informatique</p>
                 <p class="description">
-                    Passionné par le développement logiciel, le web et la data, je suis à la recherche
-                    d’un stage de 12 semaines à partir de mars 2026 pour mettre mes compétences au
+                    Passionné par le développement logiciel, le réseau et la data, je suis à la recherche
+                        d’un stage de 12 semaines pour mettre mes compétences au
                     service d’une équipe dynamique. Mon parcours m’a permis d’acquérir des bases solides
                     en développement web et applicatif (React, Svelte, PHP), gestion de bases de données
                     (SQL), ainsi qu’en analyse et visualisation de données (Power BI, Microsoft 365).
@@ -63,41 +65,59 @@
     </section>
 
     <!-- Section À propos -->
-    <section class="about">
+        <section id="a-propos" class="about">
+            <div class="section-header">
+                <div class="container">
+                    <h2>À propos</h2>
+                    <p class="section-intro">Objectifs et activités.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about-content">
+                <div class="about-card">
+                    <div class="icon-circle">🖧</div>
+                    <h3>Objectif</h3>
+                    <p><strong>Objectif principal :</strong> devenir Ingénieur Systèmes & Réseaux par la voie de l’alternance (INSA de Toulouse).</p>
+                    <p><strong>Objectif immédiat :</strong> trouver un stage de 12 semaines.</p>
+                </div>   
+                <div class="about-card">
+                    <div class="icon-circle">🎯</div>
+                    <h3>Activités pratiquées</h3>
+                    <p class="small">Échecs (Fédération Française des Échecs) : 2018 - 2019</p>
+                    <p class="small">Piano (École de musique Anacrouse‑Amac) : 2018 - 2019</p>
+                    <p class="small">Dessin (La Palette Passageoise) : 2014 - 2016</p>
+                    <p class="small">Judo + Jujitsu, ceinture verte (PJU Le Passage d’Agen) : 2013 - 2016</p>
+                    <p class="small">Basket (ALPA Basket Le Passage d’Agen) : 2014 - 2016</p>
+                    <p class="small">Football (P.F.C Le Passage d’Agen) : 2011 - 2013</p>
+                </div>             
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="formations" class="formations-section">
+        <div class="section-header">
+            <div class="container">
+                <h2>Formations</h2>
+                <p class="section-intro">Parcours académique et diplômes.</p>
+            </div>
+        </div>
+
         <div class="container">
-            <h2>À propos de moi</h2>
             <div class="about-content">
                 <div class="about-card">
-                    <div class="icon-circle"></div>
-                    <h3>Activités pratiquées</h3>
-                    <p class="small">Échecs (Fédération Française des Échecs) — 2018 – 2019</p>
-                    <p class="small">Piano (École de musique Anacrouse‑Amac) — 2018 – 2019</p>
-                    <p class="small">Dessin (La Palette Passageoise) — 2014 – 2016</p>
-                    <p class="small">Judo + Jujitsu, ceinture verte (PJU Le Passage d’Agen) — 2013 – 2016</p>
-                    <p class="small">Basket (ALPA Basket Le Passage d’Agen) — 2014 – 2016</p>
-                    <p class="small">Football (P.F.C Le Passage d’Agen) — 2011 – 2013</p>
+                    <div class="icon-circle">🎓</div>
+                    <h3>Baccalauréat STI2D</h3>
+                    <p class="small">Lycée “Jean‑Baptiste De Baudre”, Agen (47)</p>
+                    <p class="small"><strong>2020 – 2023</strong></p>
                 </div>
+
                 <div class="about-card">
-                    <div class="icon-circle">💼</div>
-                    <h3>Expériences</h3>
-                    <p><strong>Stage professionnel — Automatisation IA</strong></p>
-                    <p class="small">Workflows N8N, Mistral AI, RAG avec LLM, intégrations données</p>
-                    <p class="small">Projets: APEX KPI (aide à la décision), site PHP/React (users & auth), plateforme sociale (SAE)</p>
-                    <p class="small" style="margin-top: 8px; color: #27ae60;"><strong>Disponible: 12 semaines à partir de mars 2026</strong></p>
-                </div>
-                <div class="about-card">
-                    <div class="icon-circle">🚀</div>
-                    <h3>Objectif</h3>
-                    <p><strong>Développeur Full‑Stack & solutions IA</strong></p>
-                    <p class="small">Poursuite en école d’ingénieur (alternance) pour approfondir mes compétences</p>
-                </div>
-                <div class="about-card">
-                    <div class="icon-circle">🤝</div>
-                    <h3>Compétences relationnelles</h3>
-                    <p><strong>Analyse, rigueur, précision, créativité, écoute</strong></p>
-                    <p class="small">Échecs (FFE), Piano, Dessin</p>
-                    <p><strong style="margin-top: 8px; display: block;">Esprit d’équipe, adaptabilité, gestion du stress, communication</strong></p>
-                    <p class="small">Judo/Jujitsu (ceinture verte), Basket, Football</p>
+                    <div class="icon-circle">🎓</div>
+                    <h3>BUT Informatique – 3ème année (en cours)</h3>
+                    <p class="small">Parcours “Réalisation d’applications communicantes et sécurisées”</p>
+                    <p class="small">IUT Paul‑Sabatier, Toulouse (31)</p>
+                    <p class="small"><strong>2025 – Aujourd’hui</strong></p>
                 </div>
             </div>
         </div>
@@ -109,7 +129,7 @@
             <div class="container">
                 <h2>Mes Compétences</h2>
                 <p class="section-intro">
-                    Un aperçu de mes compétences techniques et relationnelles acquises au fil de mon parcours.
+                    Un aperçu de mes compétences techniques acquises au fil de mon parcours.
                 </p>
             </div>
         </div>
@@ -200,7 +220,7 @@
                         <div class="skill-logo">
                             <img src="Site-Web/icons/c.png" alt="C">
                         </div>
-                        <h4>C</h4>
+                        <h4>C/C++</h4>
                         <div class="skill-level">
                             <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
                             <span class="level-text">Intermédiaire</span>
@@ -416,47 +436,82 @@
                             <span class="level-text">Intermédiaire</span>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Compétences Relationnelles -->
-            <div class="skills-category">
-                <h3 class="category-title">Compétences Relationnelles</h3>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">👥</div>
-                        <h4>Travail en Équipe</h4>
-                        <p>Collaboration efficace dans des projets en groupe, partage de connaissances</p>
+            
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/powershell.png" alt="PowerShell">
+                        </div>
+                        <h4>PowerShell</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 80%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
                     </div>
 
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">💬</div>
-                        <h4>Communication</h4>
-                        <p>Capacité à expliquer des concepts techniques et à échanger avec les parties prenantes</p>
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/linux.png" alt="Linux / Unix">
+                        </div>
+                        <h4>Linux / Unix</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
                     </div>
 
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">🎯</div>
-                        <h4>Gestion de Projet</h4>
-                        <p>Organisation, planification et respect des délais dans les projets informatiques</p>
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/kubernetes.png" alt="Kubernetes">
+                        </div>
+                        <h4>Kubernetes</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
                     </div>
 
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">🔍</div>
-                        <h4>Résolution de Problèmes</h4>
-                        <p>Analyse et résolution efficace des problèmes techniques complexes</p>
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/virtualbox.png" alt="VirtualBox">
+                        </div>
+                        <h4>VirtualBox</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
                     </div>
 
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">📚</div>
-                        <h4>Apprentissage Continu</h4>
-                        <p>Curiosité et adaptabilité face aux nouvelles technologies et méthodologies</p>
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/proxmox.png" alt="Proxmox">
+                        </div>
+                        <h4>Proxmox</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
                     </div>
 
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">⚡</div>
-                        <h4>Autonomie</h4>
-                        <p>Capacité à travailler de manière indépendante et à prendre des initiatives</p>
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/cisco-packet-tracer.png" alt="Cisco Packet Tracer">
+                        </div>
+                        <h4>Cisco Packet Tracer</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+               
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/office.png" alt="Excel">
+                        </div>
+                        <h4>Office</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 90%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -469,7 +524,7 @@
             <div class="container">
                 <h2>Mes Réalisations</h2>
                 <p class="section-intro">
-                    Découvrez mes projets classés par année de réalisation.
+                    Découvrez mes projets.
                 </p>
             </div>
         </div>
@@ -477,7 +532,6 @@
         <div class="container">
             <!-- 2024 -->
             <div class="year-section">
-                <h3 class="year-title">2023 - 2024 : BUT 1</h3>
                 <div class="projects-grid">
                     <!-- SAE 2.04 APEX -->
                     <div class="project-card" id="projet-apex">
@@ -489,10 +543,10 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h4>SAE 2.04 – Exploitation d’une base de données (APEX)</h4>
-                            <p class="project-period">📅 2024 – 2025 (1ère année, binôme)</p>
+                            <h4>Exploitation d’une base de données (APEX)</h4>
+                            <p class="project-period">📅 2023 – 2024 (Binôme)</p>
                             <p class="project-description">
-                                Application Oracle APEX analysant l’engagement des étudiants sur Moodle : tableau de bord,
+                                Application Oracle APEX analysant l’engagement des étudiants sur une application (Moodle) : tableau de bord,
                                 corpus d’activités, exploration par filtres, temporalité mensuelle et suivi des tests. Volet KPI
                                 étudiant pour comparer moyennes S1 et nombre de connexions.
                             </p>
@@ -512,13 +566,44 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+
+                    <!-- Application de Vente (IHM Java) -->
+                    <div class="project-card" id="projet-vente">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7 18c-1.1 0-2-.9-2-2V6H3V4h4V3h10v1h4v2h-2v10c0 1.1-.9 2-2 2H7zm0-2h10V6H7v10zm2-2h2v-2H9v2zm3 0h2v-2h-2v2zm3 0h2v-2h-2v2zM9 9h2V7H9v2zm3 0h2V7h-2v2zm3 0h2V7h-2v2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Application de Vente — IHM Java</h4>
+                            <p class="project-period">📅 2023 – 2024 (Groupe de 4)</p>
+                            <p class="project-description">
+                                Interface de vente développée en Java avec WindowBuilder (Eclipse), gestion de la base de données
+                                et conception UML. La conception inclut un diagramme de classes détaillé; la classe <em>Panier</em>
+                                comporte 3 attributs et 10 méthodes, en composition avec <em>Article</em> (0..n).
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Swing</span>
+                                <span class="tech-tag">Eclipse</span>
+                                <span class="tech-tag">WindowBuilder</span>
+                                <span class="tech-tag">UML</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Site-Web/app-vente.html" class="btn-project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                    </svg>
+                                    Plus de détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
             <!-- 2025 -->
-            <div class="year-section">
-                <h3 class="year-title">2024 - 2025 : BUT 2</h3>
-                <div class="projects-grid">
                     <!-- Stage HABITALYS -->
                     <div class="project-card" id="projet2">
                         <div class="project-image">
@@ -567,10 +652,10 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h4>Club Photo Nailloux - Plateforme Sociale</h4>
+                            <h4>Club Photo - Plateforme Sociale</h4>
                             <p class="project-period">📅 2024 - 2025 (Groupe de 4)</p>
                             <p class="project-description">
-                                Développement d'une application web "Facebook-like" pour le club photo Nailloux permettant le partage de photos, 
+                                Développement d'une application web "Facebook-like" pour un club photo permettant le partage de photos, 
                                 la publication d'événements et la gestion d'un dépôt de documents. Travail en équipe de 4 personnes avec méthodologie SCRUM, 
                                 utilisant TypeScript/React pour le frontend et Node.js/Express pour le backend.
                             </p>
@@ -603,7 +688,7 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h4>R4.01 – Architectures logicielles : API de gestion d’équipe de sport</h4>
+                            <h4>Architectures logicielles : API de gestion d’équipe de sport</h4>
                             <p class="project-period">📅 2024 – 2025 (Binôme)</p>
                             <p class="project-description">
                                 Création d'une application MVC en architecture front/back avec API d’authentification (JWT) et API métier
@@ -622,43 +707,6 @@
                                         <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
                                     </svg>
                                     Plus de détails
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2026 -->
-            <div class="year-section">
-                <h3 class="year-title">2025 - 2026 :BUT 3</h3>
-                <div class="projects-grid">
-                    <!-- Projet 1 -->
-                    <div class="project-card" id="projet1">
-                        <div class="project-image">
-                            <div class="image-placeholder">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>[À compléter - Nom du projet]</h4>
-                            <p class="project-period">📅 [À compléter - période]</p>
-                            <p class="project-description">
-                                [À compléter - Description du projet]
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Naorito" class="btn-project" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                    Code source
                                 </a>
                             </div>
                         </div>
@@ -706,6 +754,18 @@
                         <div>
                             <h4>Téléphone</h4>
                             <p><a href="tel:+33749072492">+33 7 49 07 24 92</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM7 12h5v5H7v-5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Disponibilité</h4>
+                                <p class="small">Stage de 12 semaines</p>
                         </div>
                     </div>
 
