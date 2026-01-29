@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacine DOUKANI - Portfolio</title>
+    <link rel="stylesheet" href="Site-Web/css/style.css">
+</head>
+<body>
+    <!-- Navigation fixe -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">YD</h2>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <div class="image-placeholder">
+                    <img src="Site-Web/icons/Profil-zoom.png" alt="Photo de profil de Yacine Doukani">
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>Yacine DOUKANI</h1>
+                <p class="subtitle">Étudiant en 3ème année BUT Informatique</p>
+                <p class="description">
+                    Passionné par le développement logiciel, le web et la data, je suis à la recherche
+                    d’un stage de 12 semaines à partir de mars 2026 pour mettre mes compétences au
+                    service d’une équipe dynamique. Mon parcours m’a permis d’acquérir des bases solides
+                    en développement web et applicatif (React, Svelte, PHP), gestion de bases de données
+                    (SQL), ainsi qu’en analyse et visualisation de données (Power BI, Microsoft 365).
+                    Réalisations notables : application APEX pour extraction et analyse de KPI, site web
+                    dynamique en PHP/React avec gestion des utilisateurs, participation à la Nuit de l’Info
+                    2024 (application Svelte pour Ocean & Climate), et plateforme sociale pour un club photo.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#competences" class="btn btn-primary">Mes Compétences</a>
+                    <a href="Site-Web/CV_Yacine-DOUKANI_3ème-année-BUT.pdf" class="btn btn-secondary" download>Télécharger mon CV</a>
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Naorito" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/yacine-doukani" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="icon-circle"></div>
+                    <h3>Activités pratiquées</h3>
+                    <p class="small">Échecs (Fédération Française des Échecs) — 2018 – 2019</p>
+                    <p class="small">Piano (École de musique Anacrouse‑Amac) — 2018 – 2019</p>
+                    <p class="small">Dessin (La Palette Passageoise) — 2014 – 2016</p>
+                    <p class="small">Judo + Jujitsu, ceinture verte (PJU Le Passage d’Agen) — 2013 – 2016</p>
+                    <p class="small">Basket (ALPA Basket Le Passage d’Agen) — 2014 – 2016</p>
+                    <p class="small">Football (P.F.C Le Passage d’Agen) — 2011 – 2013</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-circle">💼</div>
+                    <h3>Expériences</h3>
+                    <p><strong>Stage professionnel — Automatisation IA</strong></p>
+                    <p class="small">Workflows N8N, Mistral AI, RAG avec LLM, intégrations données</p>
+                    <p class="small">Projets: APEX KPI (aide à la décision), site PHP/React (users & auth), plateforme sociale (SAE)</p>
+                    <p class="small" style="margin-top: 8px; color: #27ae60;"><strong>Disponible: 12 semaines à partir de mars 2026</strong></p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-circle">🚀</div>
+                    <h3>Objectif</h3>
+                    <p><strong>Développeur Full‑Stack & solutions IA</strong></p>
+                    <p class="small">Poursuite en école d’ingénieur (alternance) pour approfondir mes compétences</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-circle">🤝</div>
+                    <h3>Compétences relationnelles</h3>
+                    <p><strong>Analyse, rigueur, précision, créativité, écoute</strong></p>
+                    <p class="small">Échecs (FFE), Piano, Dessin</p>
+                    <p><strong style="margin-top: 8px; display: block;">Esprit d’équipe, adaptabilité, gestion du stress, communication</strong></p>
+                    <p class="small">Judo/Jujitsu (ceinture verte), Basket, Football</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="competences-section">
+        <div class="section-header">
+            <div class="container">
+                <h2>Mes Compétences</h2>
+                <p class="section-intro">
+                    Un aperçu de mes compétences techniques et relationnelles acquises au fil de mon parcours.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- Langages de Programmation -->
+            <div class="skills-category">
+                <h3 class="category-title">Langages de Programmation</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/java.png" alt="Java">
+                        </div>
+                        <h4>Java</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/python.png" alt="Python">
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 80%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/html.png" alt="HTML/CSS">
+                        </div>
+                        <h4>HTML / CSS</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 90%"></div></div>
+                            <span class="level-text">Expert</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/javascript.png" alt="JavaScript">
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 80%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/typescript.png" alt="TypeScript">
+                        </div>
+                        <h4>TypeScript</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/php.png" alt="PHP">
+                        </div>
+                        <h4>PHP</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/sql.png" alt="SQL">
+                        </div>
+                        <h4>SQL</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/c.png" alt="C">
+                        </div>
+                        <h4>C</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/react.png" alt="React">
+                        </div>
+                        <h4>React</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/yaml.png" alt="YAML">
+                        </div>
+                        <h4>YAML</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/ruby.png" alt="Ruby">
+                        </div>
+                        <h4>Ruby</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/svelte.png" alt="Svelte">
+                        </div>
+                        <h4>Svelte</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intelligence Artificielle -->
+            <div class="skills-category">
+                <h3 class="category-title">Intelligence Artificielle</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/ai.png" alt="AI">
+                        </div>
+                        <h4>IA & Machine Learning</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 60%"></div></div>
+                            <span class="level-text">Débutant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Environnements de Développement -->
+            <div class="skills-category">
+                <h3 class="category-title">Environnements de Développement & Bases de Données</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/docker.png" alt="Docker">
+                        </div>
+                        <h4>Docker</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/git.png" alt="Git">
+                        </div>
+                        <h4>Git / GitHub</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/n8n.png" alt="n8n">
+                        </div>
+                        <h4>n8n</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/eclipse-java.png" alt="Eclipse">
+                        </div>
+                        <h4>Eclipse</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/modelio.png" alt="Modelio">
+                        </div>
+                        <h4>Modelio</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/sql-developer.png" alt="SQL Developer">
+                        </div>
+                        <h4>SQL Developer</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 80%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/oracle.png" alt="Oracle">
+                        </div>
+                        <h4>Oracle</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/mongodb.png" alt="MongoDB">
+                        </div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/trello.png" alt="Trello">
+                        </div>
+                        <h4>Trello</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 85%"></div></div>
+                            <span class="level-text">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/ganttproject.png" alt="GanttProject">
+                        </div>
+                        <h4>GanttProject</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/mindview.png" alt="MindView">
+                        </div>
+                        <h4>MindView</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 70%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/looping.png" alt="Looping">
+                        </div>
+                        <h4>Looping</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 65%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-logo">
+                            <img src="Site-Web/icons/windev.png" alt="WinDev">
+                        </div>
+                        <h4>WinDev</h4>
+                        <div class="skill-level">
+                            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+                            <span class="level-text">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Relationnelles -->
+            <div class="skills-category">
+                <h3 class="category-title">Compétences Relationnelles</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">👥</div>
+                        <h4>Travail en Équipe</h4>
+                        <p>Collaboration efficace dans des projets en groupe, partage de connaissances</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">💬</div>
+                        <h4>Communication</h4>
+                        <p>Capacité à expliquer des concepts techniques et à échanger avec les parties prenantes</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🎯</div>
+                        <h4>Gestion de Projet</h4>
+                        <p>Organisation, planification et respect des délais dans les projets informatiques</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🔍</div>
+                        <h4>Résolution de Problèmes</h4>
+                        <p>Analyse et résolution efficace des problèmes techniques complexes</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">📚</div>
+                        <h4>Apprentissage Continu</h4>
+                        <p>Curiosité et adaptabilité face aux nouvelles technologies et méthodologies</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">⚡</div>
+                        <h4>Autonomie</h4>
+                        <p>Capacité à travailler de manière indépendante et à prendre des initiatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets-section">
+        <div class="section-header section-header-dark">
+            <div class="container">
+                <h2>Mes Réalisations</h2>
+                <p class="section-intro">
+                    Découvrez mes projets classés par année de réalisation.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- 2024 -->
+            <div class="year-section">
+                <h3 class="year-title">2023 - 2024 : BUT 1</h3>
+                <div class="projects-grid">
+                    <!-- SAE 2.04 APEX -->
+                    <div class="project-card" id="projet-apex">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>SAE 2.04 – Exploitation d’une base de données (APEX)</h4>
+                            <p class="project-period">📅 2024 – 2025 (1ère année, binôme)</p>
+                            <p class="project-description">
+                                Application Oracle APEX analysant l’engagement des étudiants sur Moodle : tableau de bord,
+                                corpus d’activités, exploration par filtres, temporalité mensuelle et suivi des tests. Volet KPI
+                                étudiant pour comparer moyennes S1 et nombre de connexions.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Oracle APEX</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Oracle</span>
+                                <span class="tech-tag">Excel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Site-Web/sae-204-apex.html" class="btn-project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                    </svg>
+                                    Plus de détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 -->
+            <div class="year-section">
+                <h3 class="year-title">2024 - 2025 : BUT 2</h3>
+                <div class="projects-grid">
+                    <!-- Stage HABITALYS -->
+                    <div class="project-card" id="projet2">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Stage HABITALYS - Automatisation IA</h4>
+                            <p class="project-period">📅 Avril - Juin 2025 (10 semaines)</p>
+                            <p class="project-description">
+                                Stage en entreprise chez HABITALYS, premier Office Public de l'Habitat du Lot-et-Garonne. 
+                                Missions d'automatisation de flux de travail assistés par IA : automatisation de l'export de diagnostics, 
+                                récupération de montants via JDBC/ODBC, et création d'une RAG (Retrieval Augmented Generation) 
+                                avec LLM pour faciliter la recherche d'informations dans les documents de l'entreprise.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">N8N</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Mistral AI</span>
+                                <span class="tech-tag">MCP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Site-Web/stage-habitalys.html" class="btn-project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                    </svg>
+                                    Plus de détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet SAE Nailloux -->
+                    <div class="project-card" id="projet-sae">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Club Photo Nailloux - Plateforme Sociale</h4>
+                            <p class="project-period">📅 2024 - 2025 (Groupe de 4)</p>
+                            <p class="project-description">
+                                Développement d'une application web "Facebook-like" pour le club photo Nailloux permettant le partage de photos, 
+                                la publication d'événements et la gestion d'un dépôt de documents. Travail en équipe de 4 personnes avec méthodologie SCRUM, 
+                                utilisant TypeScript/React pour le frontend et Node.js/Express pour le backend.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Site-Web/sae-nailloux.html" class="btn-project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                    </svg>
+                                    Plus de détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R4.01 - API équipe de sport -->
+                    <div class="project-card" id="projet-r401">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17h10v-2H7v2zm0-4h10v-2H7v2zm0-4h10V7H7v2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>R4.01 – Architectures logicielles : API de gestion d’équipe de sport</h4>
+                            <p class="project-period">📅 2024 – 2025 (Binôme)</p>
+                            <p class="project-description">
+                                Création d'une application MVC en architecture front/back avec API d’authentification (JWT) et API métier
+                                pour la gestion des joueurs, matchs, feuilles de match et statistiques. Hébergement séparé sur AlwaysData.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">PDO</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Postman</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Site-Web/r4-01-projet.html" class="btn-project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                    </svg>
+                                    Plus de détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2026 -->
+            <div class="year-section">
+                <h3 class="year-title">2025 - 2026 :BUT 3</h3>
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-card" id="projet1">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>[À compléter - Nom du projet]</h4>
+                            <p class="project-period">📅 [À compléter - période]</p>
+                            <p class="project-description">
+                                [À compléter - Description du projet]
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Naorito" class="btn-project" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <p class="section-intro">
+                    Vous avez un projet ou une opportunité ? N'hésitez pas à me contacter !
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Informations -->
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:yacinechaqroune@gmail.com">yacinechaqroune@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+33749072492">+33 7 49 07 24 92</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/Naorito" target="_blank">@Naorito</a></p>
+                        </div>
+                    </div>
+
+                    <div class="cv-download">
+                        <a href="Site-Web/CV_Yacine-DOUKANI_3ème-année-BUT.pdf" class="btn btn-primary" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                            </svg>
+                            Télécharger le CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="contact-form-container">
+                    <h3>Envoyez un message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="votre.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="stage">Opportunité de stage</option>
+                                <option value="emploi">Offre d'emploi</option>
+                                <option value="projet">Collaboration</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </svg>
+                            Envoyer
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yacine DOUKANI. Tous droits réservés.</p>
+            <p><a href="https://github.com/Naorito" target="_blank">GitHub</a> • <a href="https://linkedin.com/in/yacine-doukani" target="_blank">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="Site-Web/js/script.js"></script>
+</body>
+</html>

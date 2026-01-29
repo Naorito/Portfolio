@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE 2.04 – Exploitation d’une base de données</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .detail {max-width: 900px; margin: 40px auto; padding: 24px; background:#f9f9f9; border-radius:8px}
+    .detail h1{margin:0 0 8px}
+    .meta{color:#666; margin-bottom:24px}
+    section{margin:24px 0}
+    .tech-list{display:flex; flex-wrap:wrap; gap:10px}
+    .tech-list span{background:#3498db;color:#fff; padding:6px 12px; border-radius:20px; font-size:14px}
+    .back{display:inline-block; margin-bottom:16px; color:#3498db; text-decoration:none}
+    .back:hover{text-decoration:underline}
+    .kpi-grid{display:grid; grid-template-columns:1fr; gap:16px}
+    .img{background:#fff; border:1px solid #e1e1e1; border-radius:6px; padding:8px}
+    img{max-width:100%; height:auto; display:block}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">YD</h2>
+      <ul class="nav-menu">
+        <li><a href="../index.html#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="../index.html#competences" class="nav-link">Compétences</a></li>
+        <li><a href="../index.html#projets" class="nav-link">Projets</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="detail">
+    <a class="back" href="../index.html#projets">← Retour aux projets</a>
+    <h1>SAE 2.04 – Exploitation d’une base de données</h1>
+    <div class="meta">📅 2024 – 2025 | 1ère année BUT | Projet en binôme (MOURABIT Amine & DOUKANI Yacine)</div>
+
+    <section>
+      <h2>Résumé</h2>
+      <p>
+        Application web Oracle APEX pour analyser l’engagement de 21 étudiants sur Moodle
+        sur un semestre. L’outil inclut un tableau de bord, un corpus détaillé des activités,
+        une page d’exploration par filtres, une vue temporelle (connexions par mois) et
+        une page sur le nombre de tests réalisés par étudiant.
+      </p>
+      <p>
+        Un second volet explore la corrélation entre l’activité Moodle et les moyennes du S1
+        (données fournies via un fichier Excel) avec des KPI et visualisations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pages de l’application</h2>
+      <ul>
+        <li><strong>Accueil (Dashboard)</strong> : barres du nombre total de connexions par étudiant.</li>
+        <li><strong>Corpus</strong> : journal des activités (date/heure, étudiant, composant, IP, contexte).</li>
+        <li><strong>Exploration</strong> : filtres par étudiant, composant, événement, date.</li>
+        <li><strong>Temporalité</strong> : connexions par mois pour détecter les pics d’activité.</li>
+        <li><strong>Tests</strong> : nombre de tests réalisés par mois et par étudiant.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>KPI & Analyses</h2>
+      <ul>
+        <li>Ratio connexions / moyenne S1 (absence de corrélation apparente).</li>
+        <li>Comparaison <em>moyenne S1</em> vs <em>nombre de connexions</em> par étudiant.</li>
+      </ul>
+      <div class="kpi-grid">
+        <div class="img"><img src="icons/kpi-S2.04.png" alt="KPI SAE 2.04"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technologies utilisées</h2>
+      <div class="tech-list">
+        <span>Oracle APEX</span>
+        <span>SQL</span>
+        <span>Oracle</span>
+        <span>Moodle (données)</span>
+        <span>Excel (données)</span>
+        <span>Data Viz</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Confidentialité</h2>
+      <p>
+        Les accès externes (URL APEX, identifiants) ne sont pas exposés ici afin d’éviter
+        toute divulgation de données sensibles. Une démonstration peut être fournie sur demande.
+      </p>
+    </section>
+
+    <a class="back" href="../index.html#projets">← Retour aux projets</a>
+  </div>
+</body>
+</html>

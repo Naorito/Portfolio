@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet SAE Nailloux - Yacine DOUKANI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .project-detail h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-detail .meta {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .project-detail section {
+            margin-bottom: 30px;
+        }
+        .project-detail h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .project-detail h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .project-detail ul, .project-detail ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        .project-detail li {
+            margin-bottom: 10px;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tech-list span {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .team-member {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
+        .team-member strong {
+            color: #2c3e50;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">YD</h2>
+            <ul class="nav-menu">
+                <li><a href="../index.html#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="../index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="../index.html#projets" class="nav-link">Projets</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+
+        <h1>Plateforme Sociale - Club Photo Nailloux</h1>
+        <div class="meta">
+            <p>📅 2024 - 2025 (Projet SAE - Travail en équipe) | SAE S3.01-B</p>
+        </div>
+
+        <section>
+            <h2>À propos du projet</h2>
+            <p>
+                Développement d'une application web de type "Facebook-like" destinée aux membres du club photo Nailloux. 
+                Cette plateforme permet le partage de photos, la publication d'événements photographiques, 
+                et la gestion collaborative d'un dépôt de documents. Le projet a été réalisé dans le cadre 
+                de la SAE S3.01-B "Déploiement d'applications communicantes et sécurisées".
+            </p>
+        </section>
+
+        <section>
+            <h2>Besoins et fonctionnalités</h2>
+            <p><strong>Taux de couverture des besoins : 100% (sauf dépôt de documents partiellement implémenté)</strong></p>
+            <ul>
+                <li>✅ <strong>Inscription et authentification</strong> : Système d'inscription des utilisateurs avec validation par un membre du bureau</li>
+                <li>✅ <strong>Partage de photos</strong> : Publication et visualisation de photos avec métadonnées EXIF</li>
+                <li>✅ <strong>Système de commentaires</strong> : Commentaires sur les publications (événements et photos)</li>
+                <li>✅ <strong>Gestion d'événements</strong> : Création, publication et gestion d'événements photographiques</li>
+                <li>⚠️ <strong>Dépôt de documents</strong> : Implémenté mais nécessite finalisations</li>
+                <li>✅ <strong>Système de permissions</strong> : Photos publiques/privées avec gestion fine des autorisations</li>
+                <li>✅ <strong>Recherche et mots-clés</strong> : Classification des photos par mots-clés et recherche</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Architecture technique</h2>
+            <h3>Frontend</h3>
+            <ul>
+                <li><strong>React</strong> + <strong>TypeScript</strong> pour une interface utilisateur moderne et sécurisée</li>
+                <li><strong>Axios</strong> pour la gestion des requêtes HTTP avec intercepteurs</li>
+                <li><strong>React Big Calendar + Moment.js</strong> pour la gestion des événements</li>
+                <li>Gestion d'état et composants réutilisables</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+                <li><strong>Node.js</strong> + <strong>Express</strong> avec <strong>TypeScript</strong></li>
+                <li><strong>MySQL</strong> pour la base de données relationnelle</li>
+                <li><strong>Multer</strong> pour la gestion des uploads de fichiers</li>
+                <li><strong>Sharp</strong> pour l'optimisation et le traitement des images côté serveur</li>
+                <li><strong>JWT</strong> pour l'authentification stateless et sécurisée</li>
+                <li><strong>ts-exif-parser</strong> pour l'extraction des métadonnées EXIF</li>
+                <li><strong>Yarn</strong> pour la gestion des dépendances</li>
+            </ul>
+            <h3>Sécurité</h3>
+            <ul>
+                <li>Chiffrement des mots de passe avec bcrypt/Argon2</li>
+                <li>Tokens JWT pour l'authentification</li>
+                <li>Validations côté client et serveur</li>
+                <li>Protection contre les injections SQL</li>
+                <li>Gestion des sessions sécurisées</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Base de données</h2>
+            <p>
+                Une base de données MySQL bien structurée (dbphoto) avec les tables principales :
+            </p>
+            <ul>
+                <li><strong>utilisateur</strong> : Profils utilisateurs avec authentification</li>
+                <li><strong>photo</strong> : Stockage des photos avec métadonnées EXIF, légendes et permissions</li>
+                <li><strong>evenement</strong> : Gestion des événements avec dates et lieux</li>
+                <li><strong>document</strong> : Dépôt de documents avec descriptions</li>
+                <li><strong>commentaire_e / commentaire_p</strong> : Système de commentaires pour événements et photos</li>
+                <li><strong>participation</strong> : Gestion des présences aux événements</li>
+                <li><strong>motcle</strong> : Classification des photos par mots-clés</li>
+                <li><strong>visionnage</strong> : Gestion de la visibilité des photos</li>
+            </ul>
+            <p>
+                <strong>Décisions architecturales :</strong> UTF8mb4 pour les caractères spéciaux (emojis), 
+                index optimisés pour les performances, contraintes d'intégrité référentielle, 
+                absence de CASCADE DELETE pour plus de sécurité.
+            </p>
+        </section>
+
+        <section>
+            <!--<h2>Équipe et collaboration</h2>
+            <div class="team-list">
+                <div class="team-member">
+                    <strong>Renzo Bastide</strong>
+                    <p></p>
+                </div>
+                <div class="team-member">
+                    <strong>Enzo Castetbon</strong>
+                    <p></p>
+                </div>
+                <div class="team-member">
+                    <strong>Yacine Doukani</strong>
+                    <p>Développement fullstack</p>
+                </div>
+                <div class="team-member">
+                    <strong>Maxime Lacoste</strong>
+                    <p></p>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px;">Méthodologie et outils</h3>-->
+            <h2>Outils</h2>
+            <ul>
+                <li><strong>SCRUM</strong> : Sprints courts, backlog du produit, rétrospectives régulières</li>
+                <li><strong>GitHub</strong> : Contrôle de version et collaboration du code</li>
+                <li><strong>Trello</strong> : Organisation des sprints et suivi des tâches</li>
+                <li><strong>Discord</strong> : Communication en temps réel et synchronisation hebdomadaire</li>
+                <li><strong>Google Drive</strong> : Documentation (MCD, rapports de sprint)</li>
+                <li><strong>Visual Studio Code</strong> : Éditeur de code source</li>
+                <li><strong>XAMPP</strong> : Serveur local pour le développement PHP/MySQL</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tests et qualité</h2>
+            <h3>Tests manuels réalisés</h3>
+            <ul>
+                <li>Inscription et validation des comptes</li>
+                <li>Publication et visualisation de photos</li>
+                <li>Ajout de commentaires et interactions</li>
+                <li>Gestion des événements</li>
+            </ul>
+            <h3>Tests automatisés en développement</h3>
+            <ul>
+                <li>Récupération de tous les utilisateurs</li>
+                <li>Création et suppression d'utilisateurs</li>
+                <li>Validité des tokens JWT</li>
+                <li>Fiabilité des fonctions de hachage</li>
+                <li>Protection contre les injections SQL</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Compétences développées</h2>
+            <ul>
+                <li>✅ Réalisation d'un développement d'application complète (conception → test)</li>
+                <li>✅ Conception et implémentation d'une architecture client-serveur</li>
+                <li>✅ Gestion d'une base de données relationnelle complexe</li>
+                <li>✅ Sécurisation d'une application web (authentification, chiffrement, validation)</li>
+                <li>✅ Optimisation des images et traitement multimedia</li>
+                <li>✅ Conduite de projet en méthodologie SCRUM</li>
+                <li>✅ Collaboration en équipe avec contrôle de version</li>
+                <li>✅ Communication technique et gestion de conflits Git</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technologies utilisées</h2>
+            <div class="tech-list">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>Axios</span>
+                <span>Multer</span>
+                <span>Sharp</span>
+                <span>EXIF Parser</span>
+                <span>GitHub</span>
+                <span>Trello</span>
+                <span>SCRUM</span>
+            </div>
+        </section>
+
+        <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+    </div>
+</body>
+</html>

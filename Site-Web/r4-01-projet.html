@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R4.01 – API équipe de sport | Yacine DOUKANI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-detail {max-width: 1000px; margin: 40px auto; padding: 24px; background: #f9f9f9; border-radius: 8px;}
+        .project-detail h1 {color: #333; margin-bottom: 10px;}
+        .project-detail .meta {color: #666; font-size: 16px; margin-bottom: 24px; font-weight: 500;}
+        .project-detail section {margin-bottom: 28px;}
+        .project-detail h2 {color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; margin-bottom: 12px;}
+        .project-detail h3 {color: #34495e; margin-top: 18px; margin-bottom: 8px;}
+        .project-detail ul, .project-detail ol {margin-left: 20px; line-height: 1.8;}
+        .project-detail li {margin-bottom: 8px;}
+        .tech-list {display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+        .tech-list span {background:#3498db; color:#fff; padding:5px 12px; border-radius:20px; font-size:14px;}
+        .back-link {display:inline-block; margin-bottom:20px; color:#3498db; text-decoration:none; font-weight:500;}
+        .back-link:hover {text-decoration: underline;}
+        .endpoint {background:#ecf0f1; padding:10px 12px; border-radius:6px; display:inline-block; margin:4px 4px; font-family: monospace;}
+        .kbd {background:#eee; border:1px solid #ddd; border-bottom-width:2px; padding:2px 6px; border-radius:4px; font-family: monospace;}
+        .code-block {background:#fff; border:1px solid #ddd; border-radius:6px; padding:12px; font-family: monospace; overflow:auto;}
+        .note {background:#fff3cd; border:1px solid #ffecb5; padding:10px 12px; border-radius:6px;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">YD</h2>
+            <ul class="nav-menu">
+                <li><a href="../index.html#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="../index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="../index.html#projets" class="nav-link">Projets</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+        <h1>R4.01 – Architectures logicielles : API de gestion d’une équipe de sport</h1>
+        <div class="meta">📅 2024 – 2025 (2ème année, projet académique) | Séparation Auth / Back / Front</div>
+
+        <section>
+            <h2>Objectif</h2>
+            <p>
+                Création d'une application MVC en architecture 3 applications distinctes : <strong>API d’authentification</strong> (JWT),
+                <strong>API métier</strong> pour joueurs/matchs/feuilles, et <strong>Frontend IHM</strong> consommant les API.
+                Deux bases de données séparées assurent l’isolation entre <em>authentification</em> et <em>traitements métier</em>.
+            </p>
+            <div class="tech-list">
+                <span>PHP</span><span>XAMPP</span><span>PDO</span><span>JWT</span><span>Postman</span><span>AlwaysData</span><span>MySQL</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>URLs & Accès</h2>
+            <ul>
+                <li><strong>Authentification (JWT)</strong> : <a href="https://naorito.alwaysdata.net/R4.01-Projet_API/Projet_PHP_API/Auth/Connexion.php" target="_blank">Connexion.php</a></li>
+                <li><strong>Index</strong> : <a href="https://naorito.alwaysdata.net/index.html" target="_blank">naorito.alwaysdata.net/index.html</a> (redirige vers authentification)</li>
+            </ul>
+            <p class="note"><strong>Note :</strong> Toutes les API métier exigent un en-tête <span class="kbd">Authorization: Bearer &lt;JWT&gt;</span>.</p>
+        </section>
+
+        <section>
+            <h2>Endpoints principaux</h2>
+            <div>
+                <span class="endpoint">POST /Authentification</span>
+                <span class="endpoint">GET /ListeJoueur</span>
+                <span class="endpoint">POST /AjouterJoueur</span>
+                <span class="endpoint">PUT /ModifierJoueur</span>
+                <span class="endpoint">DEL /SupprimerJoueur</span>
+                <span class="endpoint">GET /ListeMatch</span>
+                <span class="endpoint">POST /AjouterMatch</span>
+                <span class="endpoint">PUT /ModifierMatch</span>
+                <span class="endpoint">DEL /SupprimerMatch</span>
+                <span class="endpoint">GET /FeuilleMatch</span>
+                <span class="endpoint">PUT /AjoutFeuilleMatch</span>
+                <span class="endpoint">DEL /SupprimerFeuilleMatch</span>
+                <span class="endpoint">GET /Statistiques</span>
+                <span class="endpoint">PUT /Resultat</span>
+                <span class="endpoint">GET /Evaluation</span>
+            </div>
+            <p>
+                Certains endpoints attendent des paramètres d’URL, par exemple :
+                <strong>FeuilleMatch</strong> : <em>?match_id=42</em> →
+                <a href="http://naorito.alwaysdata.net/R4.01-Projet_API/Projet_PHP_API/backend/FeuilleMatchAPI.php?match_id=42" target="_blank">exemple</a>
+                (nécessite l’en-tête JWT, autrement 401).
+            </p>
+        </section>
+
+        <section>
+            <h2>Base de données</h2>
+            <ul>
+                <li><strong>Auth DB</strong> : utilisateurs autorisés, tokens (via API).</li>
+                <li><strong>Metier DB</strong> : joueurs, matchs, feuilles de match, statistiques.</li>
+            </ul>
+            <p>
+                Hébergement MySQL via AlwaysData (phpMyAdmin). Accès encapsulé par <strong>PDO</strong> dans le backend,
+                via un utilitaire <em>BD.php</em> (répertoire <em>librairie</em>), centralisant connexion et requêtes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tests Postman</h2>
+            <h3>1) Obtenir un jeton</h3>
+            <div class="code-block">{
+    "username": "Joueur@gmail.com",
+    "password": "Password"
+}</div>
+            <p>Envoyer sur <em>Authentification</em> puis copier le champ <strong>token</strong>.</p>
+
+            <h3>2) Ajouter le header</h3>
+            <p>Dans chaque requête API : <span class="kbd">Authorization</span> = <span class="kbd">Bearer &lt;token&gt;</span>.</p>
+
+            <h3>Exemples de corps de requêtes</h3>
+            <h4>Ajouter un joueur (POST)</h4>
+            <div class="code-block">{
+    "nom": "Dupont",
+    "prenom": "Moreno",
+    "numero_licence": "123456578",
+    "date_naissance": "2000-01-01",
+    "taille": 180,
+    "poids": 75,
+    "statut": "Actif"
+}</div>
+
+            <h4>Ajouter un match (POST)</h4>
+            <div class="code-block">{
+    "date_match": "2023-12-01",
+    "heure_match": "15:00",
+    "equipe_adverse": "Équipe B",
+    "lieu": "Domicile",
+    "resultat_equipe": null,
+    "resultat_adverse": null
+}</div>
+
+            <h4>Modifier un joueur (PUT)</h4>
+            <div class="code-block">{
+    "id": 31,
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "numero_licence": "123456",
+    "date_naissance": "1990-01-01",
+    "taille": 180,
+    "poids": 74,
+    "statut": "Actif",
+    "commentaires": "Bon joueur"
+}</div>
+
+            <h4>Modifier un match (PUT)</h4>
+            <div class="code-block">{
+    "id": 42,
+    "date_match": "2025-12-02",
+    "heure_match": "16:00",
+    "equipe_adverse": "Équipe C",
+    "lieu": "Extérieur",
+    "resultat_equipe": 2,
+    "resultat_adverse": 6
+}</div>
+
+            <h4>Modifier une feuille de match (PUT)</h4>
+            <div class="code-block">{
+    "match_id": 42,
+    "joueurs": [
+        {"joueur_id": 14, "statut": "titulaire", "poste_prefere": "Top Lane"},
+        {"joueur_id": 15, "statut": "titulaire", "poste_prefere": "Mid Lane"},
+        {"joueur_id": 16, "statut": "titulaire", "poste_prefere": "Jungler"},
+        {"joueur_id": 17, "statut": "titulaire", "poste_prefere": "Bot Lane ADC"},
+        {"joueur_id": 18, "statut": "titulaire", "poste_prefere": "Bot Lane Support"},
+        {"joueur_id": 19, "statut": "remplacant", "poste_prefere": "Top Lane"},
+        {"joueur_id": 20, "statut": "remplacant", "poste_prefere": "Mid Lane"},
+        {"joueur_id": 21, "statut": "remplacant", "poste_prefere": "Jungler"}
+    ]
+}</div>
+
+            <h4>Modifier le résultat (PUT)</h4>
+            <div class="code-block">{
+    "id": 38,
+    "date_match": "2025-04-19",
+    "heure_match": "02:19",
+    "equipe_adverse": "Test1",
+    "lieu": "Domicile",
+    "resultat_equipe": 3,
+    "resultat_adverse": 2
+}</div>
+
+            <p>Pour les <strong>GET</strong>, fournir <em>match_id</em> lorsque requis : <span class="kbd">?match_id=42</span>.</p>
+            <p>Pour les <strong>DELETE/PUT</strong> ciblés, utiliser <span class="kbd">?id=42</span> selon l’endpoint.</p>
+        </section>
+
+        <section>
+            <h2>Frontend & IHM</h2>
+            <p>
+                L’interface utilisateur reprend les pages du dossier <em>frontend</em> : ListeJoueur, ListeMatch, Création/Modification
+                des joueurs/matchs, Feuille de match, Résultat, Commentaire, Évaluations, Statistiques. La page d’authentification
+                (Auth/Connexion.php) permet d’obtenir le jeton avant toute action.
+            </p>
+        </section>
+
+        <section>
+            <h2>Sécurité</h2>
+            <ul>
+                <li>Authentification via <strong>JWT</strong>, jeton exigé sur toutes les API métier.</li>
+                <li>Séparation stricte des bases de données (auth vs métier).</li>
+                <li>Accès DB via <strong>PDO</strong> et requêtes préparées.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yacine DOUKANI. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+
+
+
+Rapport final de la SAE
+Déploiement d'applications communicantes et sécurisées
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sommaire	2
+Partie 1 : Couverture des besoins exprimés et organisation du travail	3
+1.1. Taux de couverture des besoins exprimés	3
+1.2. Organisation humaine et technique	4
+Partie 2 : Framework de programmation	4
+Partie 2 : Base de données	5
+Partie 2 : Tests	5
+Partie 3 : Lien avec les apprentissages critiques des compétences	5
+3.1. Réalisation d'un développement d'application	5
+3.2. Optimisation des applications	6
+3.3. Administration des systèmes informatiques	6
+3.4. Gestion des données	6
+3.5. Conduite de projet	6
+3.6. Collaboration au sein d'une équipe informatique	6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partie 1 : Couverture des besoins exprimés et organisation du travail
+1.1. Taux de couverture des besoins exprimés
+Les besoins exprimés par le client étaient la création d'une application web " Facebook-like " permettant aux membres du club photo Nailloux de :
+? Partager leurs photos.
+? Publier des événements.
+? Disposer d'un dépôt de documents.
+L'état d'implémentation des fonctions est le suivant :
+FonctionÉtat d'implémentationInscription des utilisateursImplémentéValidation par un membre du bureauImplémentéPublication de photosImplémentéCommentaires sur les publicationsImplémentéGestion d'événementsImplémentéDépôt de documentsImplémentéTous les besoins exprimés ont été couverts, à l'exception du dépôt de documents, qui reste en suspens.
+
+1.2. Organisation humaine et technique
+Composition de l'équipe :
+? Renzo : 
+? Enzo : 
+? Yacine : 
+? Maxime : 
+Outils de collaboration :
+? GitHub : Utilisé pour le partage des fichiers (code) et le contrôle de version. Quelques problèmes ont été rencontrés par certains membres (push/pull).
+? Discord : Utilisé pour la communication et le partage d'informations en temps réel.
+? Trello : Outil de planification pour organiser le projet en sprints successifs.
+? Google Drive: Utilisé pour le partage de fichier (textuel) comme MCDi ou les rapports de revue de sprint
+Méthodologie SCRUM :
+Le projet a été mené selon les principes de la méthode SCRUM. Les éléments suivants ont été appliqués :
+? Backlog du produit : Listes des fonctionnalités à implémenter, gérées dans Trello.
+? Sprints : Organisation du projet en cycles courts (sprints) pour livrer des parties fonctionnelles de l'application à chaque étape.
+? Rôles : Pas de Scrum Master officiel, mais les rôles étaient distribués selon les responsabilités décrites ci-dessus.
+? Rétrospectives : Discussions régulières pour évaluer les évolutions et ajuster la planification.
+Chaque sprint s'est concentré sur des fonctionnalités clés, avec des mises à jour régulières sur Trello pour suivre les progrès. Nous avons également organisé des réunions hebdomadaires via Discord pour synchroniser les efforts de l'équipe et répondre aux défis rencontrés.
+Partie 2 : Framework de programmation
+2.1. Pourquoi avoir choisi ce framework et pas un autre ?
+Nous avons choisi React avec TypeScript pour le frontend, car cela nous permet de tirer parti de la puissance de React tout en bénéficiant de la sécurité offerte par TypeScript. Cela nous aide à éviter des erreurs courantes et à améliorer la lisibilité et la maintenabilité du code, ce qui est crucial à mesure que le projet évolue. Pour le backend, nous avons opté pour TypeScript avec Express et Node.js, afin de garder une cohérence entre le frontend et le backend en utilisant le même langage des deux côtés. Node.js nous offre une gestion rapide et non bloquante des requêtes, tandis qu'Express reste léger et flexible pour nos besoins. Enfin, avec Yarn, nous assurons une gestion des dépendances rapide et efficace, ce qui simplifie nos processus de développement et de mise à jour.
+? Modules/extensions utilisés et justification des choix.
+Multer : 
+Nous utilisons Multer pour simplifier la gestion des fichiers avec Express, grâce à sa flexibilité pour le stockage et le contrôle des fichiers, tout en étant performant et fiable.
+React Big Calendar avec moment :
+Nous avons choisi React Big Calendar pour la gestion des événements pour sa simplicité et ses vues multiples, associé à Moment.js pour sa gestion efficace des dates et son intégration directe avec RBC, garantissant une expérience utilisateur fluide.
+Axios : 
+Nous utilisons Axios pour ses fonctionnalités avancées de gestion des requêtes HTTP, notamment la gestion des erreurs, les intercepteurs, et la prise en charge native des promesses, ce qui simplifie la communication entre le frontend et le backend.
+Sharp : 
+Nous avons choisi Sharp pour son efficacité dans le traitement des images côté serveur, notamment pour le redimensionnement, la compression et la conversion, offrant ainsi une gestion rapide et performante des fichiers multimédia tout en réduisant l'impact sur les performances de l'application.
+
+
+fs : 
+Nous utilisons le module fs (File System) de Node.js pour gérer les fichiers côté serveur, car il permet de lire, écrire et manipuler facilement les fichiers locaux, offrant ainsi une solution simple et native pour le stockage et la gestion des données.
+Path :
+Nous utilisons le module path de Node.js pour gérer les chemins de fichiers de manière sûre et compatible avec différents systèmes d'exploitation, facilitant ainsi la manipulation des répertoires et fichiers tout en évitant les erreurs liées aux séparateurs de chemins.
+ ts-exif-parser : 
+Nous avons choisi ts-exif-parser pour extraire les métadonnées EXIF des images, ce qui nous permet de récupérer des informations essentielles comme la date, l'heure, et les paramètres de prise de vue, afin d'améliorer la gestion et l'organisation des photos dans l'application.
+Crypto :
+Nous utilisons le module crypto de Node.js pour sécuriser les données sensibles, notamment pour le chiffrement des informations utilisateurs et la génération de hachages, assurant ainsi la confidentialité et l'intégrité des données dans notre application.
+JSON Web Tokens :
+Nous avons choisi d'utiliser JWT (JSON Web Tokens) pour la gestion de l'authentification, car il permet de transmettre des informations sécurisées entre le client et le serveur sous forme de tokens signés, garantissant ainsi une authentification stateless et une gestion sécurisée des sessions utilisateurs.
+mysql : 
+Nous utilisons le module mysql de Node.js pour interagir avec notre base de données MySQL, car il offre une API simple et performante pour exécuter des requêtes SQL, facilitant l'intégration et la gestion des données de manière sécurisée et fiable.
+? Mécanismes de sécurité intégrés.
+? Analyse de l'implémentation du MCD.
+En tant qu'équipe, voici notre réflexion sur les changements que nous avons apportés à la base de données, accompagnée de nos justifications et des impacts prévus. Ces décisions ont été prises en tenant compte des besoins fonctionnels, de la performance et de la maintenabilité à long terme.
+
+1. Changements sur les types de données
+Passage de BOOLEAN à tinyint(1) Nous avons uniformisé les colonnes booléennes en utilisant tinyint(1), car MySQL interprète déjà BOOLEAN comme tel. Cette standardisation améliore la clarté pour tous les membres de l'équipe et garantit une compatibilité maximale avec les outils et bibliothèques externes.
+
+Allongement de mdp à VARCHAR(128) dans utilisateur Nous avons anticipé l'utilisation d'algorithmes de hachage modernes pour la gestion des mots de passe, comme bcrypt ou Argon2. Cette décision renforce la sécurité et protège mieux les données utilisateur.
+
+Validation JSON pour exif dans photo L'ajout de la contrainte CHECK (json_valid(exif)) permet de garantir l'intégrité des métadonnées des photos. Cela offre également de la flexibilité pour stocker des informations techniques tout en réduisant les risques d'erreurs d'enregistrement.
+
+Conversion de CHAR(5) à int(5) pour cp En optant pour un entier pour les codes postaux, nous avons simplifié les comparaisons et les calculs éventuels. Cependant, nous avons noté qu'il faudra ajuster ce choix si des codes postaux avec des zéros en début posent problème.
+
+2. Nouveaux champs pour enrichir les fonctionnalités
+Ajout de description dans document Ce champ donne la possibilité d'ajouter des détails contextuels sur les documents téléchargés. Cela répond à un besoin utilisateur identifié pour mieux différencier les fichiers sans les ouvrir.
+
+Ajout de légende et isPublic dans photo
+
+Le champ légende permet d'ajouter une description visible avec chaque photo, facilitant leur consultation par les utilisateurs.
+Le champ isPublic améliore la gestion des autorisations en distinguant les photos publiques des photos privées.
+3. Amélioration de la performance via les index
+Nous avons ajouté des index sur des colonnes fréquemment utilisées dans les jointures ou les requêtes complexes (id_evenement, id_utilisateur, id_photo). Cela garantit des performances optimales, même avec une augmentation significative des données dans le futur.
+
+Les noms explicites pour les contraintes (ibfk_*) rendent les relations plus compréhensibles et facilitent le dépannage en cas d'erreurs.
+
+4. Encodage et collation
+Adoption de utf8mb4 et utf8mb4_bin Ce choix garantit une prise en charge étendue des caractères spéciaux, y compris les emojis, et assure une distinction stricte entre majuscules et minuscules. Nous avons jugé cette distinction essentielle dans les contextes multilingues et les recherches sensibles à la casse.
+5. Gestion des relations et contraintes
+Absence de suppression en cascade explicite Nous avons volontairement évité d'ajouter des contraintes ON DELETE CASCADE. Cela nous donne un contrôle plus précis sur les suppressions et évite des pertes de données involontaires lors des modifications ou suppressions en chaîne. Cette approche est plus sécurisée à ce stade du projet.
+
+Suppression d'AUTO_INCREMENT sur certaines colonnes Nous avons décidé de gérer manuellement certains identifiants via des logiques métier ou des générateurs externes, comme UUIDs. Cela nous permet une meilleure maîtrise dans certains cas d'utilisation spécifiques.
+
+6. Préparation pour des évolutions futures
+Nous avons aligné les choix techniques sur les besoins futurs que nous avons identifiés :
+
+Validation JSON pour les métadonnées avancées.
+Gestion des autorisations pour les photos publiques/privées.
+Anticipation de fonctionnalités comme une galerie publique, une recherche par mots-clés, et des commentaires enrichis.
+Optimisation de la sécurité
+
+L'augmentation de la taille des mots de passe répond directement aux standards modernes de sécurité.
+L'ajout de champs descriptifs enrichit les fonctionnalités tout en garantissant la clarté des données.
+Partie 2 : Base de données
+- A compléter
+? Organisation des bases de données, tables, champs, types, relations.
+1. Organisation générale de la base de données
+La base de données est bien structurée, avec des tables correspondant aux entités principales de l'application. Elle semble modulaire et bien adaptée pour gérer un système de gestion d'événements, de photos, et de participants, avec des relations entre utilisateurs, événements et documents. Elle prend en compte l'aspect social avec des commentaires, des mots-clés, et une gestion fine des autorisations.
+
+2. Tables et champs
+utilisateur
+Champs : contient les informations de base de l'utilisateur (nom, prénom, adresse, email, etc.).
+Type de données : Les types de données sont appropriés pour chaque champ, avec l'utilisation de varchar pour les champs textuels et char(10) pour les numéros de téléphone. Le choix de varchar(128) pour le mot de passe est adapté pour stocker des hachages sécurisés.
+Relation : Chaque utilisateur peut être associé à plusieurs événements, photos et documents, ce qui est bien pris en charge avec les relations FOREIGN KEY.
+
+evenement
+Champs : Gère les informations des événements, y compris les dates, le lieu, et le type.
+Type de données : Les dates sont bien gérées avec datetime pour les champs de début et de fin. varchar(50) pour le titre et la description est adéquat.
+Relation : Lien avec utilisateur pour identifier l'organisateur, et relations avec photo, document, et participation pour associer ces entités à l'événement.
+
+document
+Champs : Contient des informations sur les documents téléchargés, y compris le chemin du fichier et sa description.
+Type de données : Le type varchar(50) pour le nom du fichier est adéquat. L'utilisation de datetime pour la date de dépôt permet de tracer les documents efficacement.
+Relation : Lien avec utilisateur (propriétaire du document) et evenement (l'événement auquel le document est associé).
+
+photo
+Champs : Stocke les photos avec des informations comme le nom, la date de prise de vue, et les métadonnées EXIF.
+Type de données : Utilisation d'un longtext pour les métadonnées EXIF est un choix judicieux pour stocker des données complexes et volumineuses. Le champ légende est un ajout utile pour une meilleure présentation des photos.
+Relation : Lien avec utilisateur pour l'auteur de la photo et avec evenement pour l'événement associé.
+
+commentaire_e et commentaire_p
+Champs : Ces tables gèrent les commentaires pour les événements et les photos. Les champs de texte sont définis comme text, adaptés pour stocker des commentaires de longueur variable.
+Relation : Chaque commentaire est lié à un utilisateur et à un événement ou une photo, respectivement. Cela favorise la traçabilité et l'interaction avec le contenu.
+
+motcle
+Champs : Gère les mots-clés associés aux photos, permettant de mieux les catégoriser et faciliter la recherche.
+Type de données : varchar(50) est suffisant pour stocker des mots-clés.
+Relation : Lien avec la table photo via la table decrire pour associer plusieurs mots-clés à une photo.
+
+visionnage
+Champs : Contient les informations sur la visibilité et la diffusion des photos dans un événement.
+Type de données : Utilisation de datetime pour les dates de visibilité et de diffusion permet de suivre les changements dans le temps.
+Relation : Lié à evenement pour chaque événement ayant une visionnage associé.
+
+participation
+      Champs : Gère la présence des utilisateurs lors des événements.
+Type de données : Le champ presence est un tinyint(1), ce qui est adapté pour des valeurs booléennes (présence ou absence).
+Relation : Table de liaison entre utilisateur et evenement.
+
+decrire
+Champs : Relie les photos aux mots-clés, permettant de décrire les photos de manière catégorielle.
+Relation : Table de liaison entre photo et motcle.
+
+3. Types de données et leur adéquation
+Les types de données sont bien choisis dans l'ensemble pour chaque champ. Par exemple :
+Les champs texte (commentaires, descriptions, etc.) utilisent des types comme varchar et text, qui sont adaptés pour le stockage de données non structurées.
+Les champs datetime et timestamp permettent un suivi précis des événements temporels.
+tinyint(1) est utilisé pour les valeurs booléennes comme la présence à un événement, ce qui est standard en SQL.
+
+4. Relations et intégrité référentielle
+Les relations entre les tables sont bien définies à l'aide de clés étrangères (FOREIGN KEY), ce qui permet d'assurer l'intégrité référentielle. Ces relations garantissent que les données restent cohérentes :
+Par exemple, un commentaire doit toujours être associé à un événement ou une photo existante, un document à un événement existant, etc.
+L'utilisation de clés primaires et d'index dans les tables permet d'optimiser les requêtes et de faciliter les jointures.
+
+? Méthodes d'accès aux données.
+Nous accédons à la base de données en l'interrogeant directement à l'aide de requêtes SQL contenues dans un fichier index.ts.
+Partie 2 : Tests
+Les tests ont été effectués principalement de manière manuelle, et des tests automatisés sont en cours de développement.
+Tests manuels réalisés :
+? Inscription et validation des comptes.
+? Publication et visualisation de photos.
+? Ajout de commentaires.
+Ces tests ont permis d'assurer une vérification fonctionnelle initiale de l'application. Les résultats montrent que les fonctionnalités implémentées répondent aux attentes des utilisateurs finaux.
+Tests automatisés avec Yarn (en cours) :
+1. Vérification de la récupération de tous les utilisateurs.
+2. Vérification de la création d'un utilisateur.
+3. Vérification de la suppression d'un utilisateur.
+4. Vérification de la validité des tokens générés.
+5. Assurer la fiabilité des fonctions de hachage.
+6. Bloquer les injections SQL.
+Les tests automatisés sont en phase de développement et serviront à renforcer la fiabilité de l'application. Ils incluent des scénarios critiques liés à la sécurité et à la gestion des utilisateurs.
+Partie 3 : Lien avec les apprentissages critiques des compétences
+3.1. Réalisation d'un développement d'application
+L'application web développée pour le club photo Nailloux répond directement à cette compétence. Elle met en pratique les notions de développement web (HTML, CSS, JavaScript) et de gestion des utilisateurs, tout en respectant les besoins fonctionnels définis par le client. Les choix de conception ont permis de structurer le projet efficacement.
+Je l'ai modifié en ça (à vérifier) :
+L'application web développée pour le club photo Nailloux répond directement à cette compétence. En effet, on a pu concevoir, coder, tester et intégrer une solution informatique pour un client à savoir l'application web. On a pu partir des exigences du client et aller jusqu'à une application complète. Avec, on a étudié et validé plusieurs apprentissages critiques (AC) à savoir :
+- AC 1 : Elle met en pratique les notions de développement web (HTML, CSS, JavaScript) et de gestion des utilisateurs, tout en respectant les besoins fonctionnels définis par le client. Les choix de conception ont permis de structurer le projet efficacement.
+- AC 2 : Les principes d'accessibilité et d'ergonomie ont été appliqués en réalisant un site simple avec peu de fonctions pouvant rapidement être atteint grâce à un menu de navigation (header) et grâce à une zone de documents consultable contenant une notice d'utilisation du site web afin de garantir une interface intuitive et accessible à tous les utilisateurs.
+- AC 3 : Les choix de conception et les bonnes pratiques de programmation à savoir : mettre les requêtes dans un fichier index.ts, lancer l'application depuis App.ts, mettre les pages dans le frontend, etc ... ont permis de structurer le projet efficacement, en respectant les standards modernes (backend et frontend, fichier index, dossier pour chaque partie de l'application comme un dossier contenant les pages de connexion et d'inscription, etc ...).
+La qualité de l'application n'ayant pas été testé de façon approfondie avec des tests, on a pas validé l'AC 4.
+3.2. Optimisation des applications
+Bien que Redis ait été étudié en cours, il n'a pas été utilisé dans ce projet. Cependant, les notions théoriques apprises sur l'optimisation restent pertinentes pour de futurs projets. Nous avons appliqué certaines bonnes pratiques, telles que la limitation des requêtes redondantes et l'utilisation d'algorithmes efficaces pour le traitement des données.
+Je l'ai modifié en ça (à vérifier car je suis vraiment pas sur que j'ai écrit un truc vrai sur les AC) :
+Bien que Redis ait été étudié en cours, il n'a pas été utilisé dans ce projet. Cependant, les notions théoriques apprises sur l'optimisation restent pertinentes pour de futurs projets. Nous avons appliqué certaines bonnes pratiques, telles que la limitation des requêtes redondantes et l'utilisation d'algorithmes efficaces pour le traitement des données. En revanche, on a étudié et validé plusieurs apprentissages critiques (AC) avec d'autres méthodes à savoir :
+- AC 1 : Des structures de données complexes adaptées au problème ont été choisies et implémentées en créant une base de données sur phpMyAdmin (dbphoto) avec des tables comme la table utilisateur
+- AC 2 : Les notions théoriques apprises sur l'optimisation ont permis d'appliquer des techniques algorithmiques adaptées, telles que la limitation des requêtes redondantes et l'utilisation d'algorithmes efficaces pour le traitement des données stockées dans la base dans notre index.ts avec une configuration de Mutler et la répartition des requêtes sur plusieurs parties à savoir : les méthodes POST, les méthodes PUT, etc ...
+On a pas vraiment porté d'attention particulière sur la sécurisation du code en se prévenant par exemple des injections SQL et on n'a pas non plus pensé à l'impact environnemental de notre application. Le code n'a pas été totalement optimisé donc on a pas pu valider l'AC 3 et 4.
+3.3. Administration des systèmes informatiques
+- A vérifier :
+AC 1 : Dans ce projet, nous avons conçu et développé une application web qui intègre des interactions client-serveur via des requêtes HTTP. L'application permet aux utilisateurs d'envoyer des données (formulaires, authentification) et de recevoir des réponses (résultats, messages de confirmation).
+
+AC 2 : Nous avons utilisé un serveur local virtualisé via XAMPP pour héberger la base de données et l'application. Ce serveur intègre Apache, MySQL et PHP, permettant de simuler un environnement de production directement sur nos machines. Cette approche a permis de configurer, tester et valider l'ensemble des fonctionnalités réseau (requêtes SQL, gestion des sessions) avant une éventuelle mise en production.
+
+AC 3 : Les validations côté client et côté serveur ont été ajoutées pour garantir l'intégrité des données. Enfin, l'accès à certaines fonctionnalités sensibles a été restreint aux utilisateurs authentifiés via un système de gestion de sessions sécurisé (seuls les administrateurs ont toutes les commandes).
+3.4. Gestion des données
+on a étudié et validé plusieurs apprentissages critiques (AC)
+3.5. Conduite de projet
+La mise en œuvre de la méthodologie SCRUM et l'utilisation d'outils comme Trello pour organiser le backlog, les sprints et les priorités illustrent notre capacité à conduire un projet efficacement. Les retours réguliers et la coordination entre membres ont permis d'identifier et de résoudre rapidement les obstacles rencontrés.
+3.6. Collaboration au sein d'une équipe informatique
+Le projet a été réalisé en collaboration entre quatre membres de l'équipe. Les outils de communication (Discord) et de gestion de versions (GitHub) ont joué un rôle central dans la coordination. Les problèmes rencontrés avec GitHub (push/pull) ont été gérés collectivement grâce à des sessions de support entre les membres.
+
+
+
+
+
+
+
+
+
+Rapport collectif S3.01-B								      2024-2025
+
+------------------ Renzo Bastide - Enzo Castetbon - Yacine Doukani - Maxime Lacoste -------------- 
+
+Rapport collectif S3.01-B								      2024-2025
+
+------------------ Renzo Bastide - Enzo Castetbon - Yacine Doukani - Maxime Lacoste ------------------
+
