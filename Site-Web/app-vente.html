@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application de Vente — IHM Java</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="../index.html#accueil">Portfolio</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="../index.html#competences" class="nav-link">Compétences</a></li>
+        <li><a href="../index.html#projets" class="nav-link">Projets</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="project-detail">
+    <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+
+    <h1>Application de Vente — IHM Java</h1>
+    <div class="meta">📅 2023 – 2024 | Projet en groupe</div>
+
+    <section>
+      <h2>Résumé</h2>
+      <p>
+        Application de vente avec interface graphique Java (Swing) construite via WindowBuilder sous Eclipse.
+        Le projet couvre la mise en place de l'IHM, la gestion de la base de données et la conception UML
+        pour cadrer le domaine métier et les interactions entre classes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Conception UML</h2>
+      <p>
+        Un diagramme de classes détaillé et commenté structure le modèle. La classe <strong>Panier</strong>
+        est l'unique classe ajoutée au modèle initial ; elle comporte <strong>3 attributs</strong> et
+        <strong>10 méthodes</strong>, et entretient une relation de <em>composition</em> avec la classe
+        <strong>Article</strong> permettant d'ajouter <strong>0..n</strong> articles au panier.
+      </p>
+      <div class="kpi-grid">
+        <div class="img">
+          <a href="icons/diagramme-java.png" target="_blank" rel="noopener">
+            <img src="icons/diagramme-java.png" alt="Diagramme de classes – Application de Vente" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interface Graphique</h2>
+      <p>
+        L'interface a été réalisée avec Swing et WindowBuilder (Eclipse), en suivant des maquettes
+        pour les écrans principaux (liste des produits, fiche produit, panier, coordonnées, facture).
+        Les maquettes servent d'exemples de rendu et d'organisation des composants.
+      </p>
+      <h3>Exemple d'une page de l'application</h3>
+      <div class="kpi-grid">
+        <div class="img">
+          <a href="icons/magasin-java.png" target="_blank" rel="noopener">
+            <img src="icons/magasin-java.png" alt="Écran panier / récapitulatif" />
+          </a>
+        </div>
+      </div>
+      <h3>Exemple d'une maquette</h3>
+      <div class="kpi-grid">
+        <div class="img">
+          <a href="icons/java-maquette.png" target="_blank" rel="noopener">
+            <img src="icons/java-maquette.png" alt="Maquette IHM Java – liste et filtres" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fonctionnalités clés</h2>
+      <ul>
+        <li>Affichage et filtrage des produits (liste de fromages)</li>
+        <li>Fiche produit avec image, description et choix de quantité</li>
+        <li>Gestion du panier (ajout/suppression, recalcul, transporteur)</li>
+        <li>Saisie des coordonnées et sélection du moyen de paiement</li>
+        <li>Génération d'une facture récapitulative</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technologies utilisées</h2>
+      <div class="tech-list">
+        <span>Java</span>
+        <span>Swing</span>
+        <span>Eclipse</span>
+        <span>WindowBuilder</span>
+        <span>UML</span>
+        <span>SQL</span>
+      </div>
+    </section>
+
+    <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+  </div>
+</body>
+</html>
